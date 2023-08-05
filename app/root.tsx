@@ -1,3 +1,4 @@
+
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
@@ -14,12 +15,14 @@ export const links: LinksFunction = () => [
 ];
 
 export default function App() {
+//  useSWEffect();
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
+        <link rel="manifest" href="/webmanifest.json" />
         <Links />
       </head>
       <body>
